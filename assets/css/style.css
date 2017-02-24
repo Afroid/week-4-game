@@ -1,0 +1,87 @@
+body {
+    /*background-image: url("assets/images/Background.jpg");*/
+    background-size:100% auto;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: #ADD8E6;
+}
+
+div{
+	font-size: 20px;
+}
+
+p{
+	height: 60px;
+	font-size: 18px;
+	text-align: center;
+  	line-height: 60px;
+}
+
+/*This is the styling for the imgs*/
+img{
+	width: 100%;
+	opacity: 0.8;
+	padding: 5%;
+	border: #ADD8E6;
+	border-style: solid;
+}
+
+/*This is the styling for the HOVER effect on the imgs*/
+img:hover{
+	width: 100%;
+	opacity: 1.0;
+	padding: 0%;
+}
+
+/*img{
+	padding: 10% 10% 10% 10%;
+	max-height: 400px;
+	max-width: 400px;
+	margin: 2% 2% 2% 2%;
+}*/
+
+#header{
+	/*margin-bottom: 5%;*/
+}
+
+#StarWarsTitle{
+	float: right;
+	text-align: right;
+	font-size: 20px;
+}
+
+#yourCharacter{
+	margin-bottom: 2%;
+	font-size: 1em;
+}
+
+#initialPlayers{
+	border: white;
+	border-style: solid;
+}
+
+#fightArena{
+	margin-top: 2%;
+	font-size: 1em;
+}
+#fighters{
+	border: white;
+	border-style: solid;
+}
+
+
+#luke{
+	
+}
+
+#sidious{
+
+}
+
+#maul{
+
+}
+
+#vader{
+
+}
