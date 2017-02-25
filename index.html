@@ -6,6 +6,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
+
+  	<!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 </head>
 <body background="assets/images/Background.jpg">
 <!-- <body> -->
@@ -14,71 +17,68 @@
 </header>
 
 <div class="container-fluid">
-	<div class="row col-md-12">
-		<div id="yourCharacter" class="row col-md-12">Choose a fighter</div>
-		
-		<div id="initialPlayers" class="row col-md-12">
+
+<!-- This is where you have your initial players to choose from -->
+	<div id="initialPlayersArea" class="row col-md-12"> 
+		<div id="initialPlayersRow" class="row col-md-12">
+			<div id="yourCharacter" class="row col-md-12">Choose a fighter</div>
 			<div id="luke" class="col-md-3">
 				<p class="col-md-12">Luke Skywalker</p>
-				<img class="img-responsive" src="assets/images/luke.png" alt="" />
+				<img class="img-responsive aFighter" src="assets/images/luke.png" alt="luke" />
 				<p class="col-md-12">Luke Skywalker's Number</p>
 			</div>
 
 			<div id="sidious" class="col-md-3">
 				<p class="col-md-12">Darth Sidious</p>
-				<img class="img-responsive" src="assets/images/sidious.png" alt="" />
+				<img class="img-responsive aFighter" src="assets/images/sidious.png" alt="sidious" />
 				<p class="col-md-12">Darth Sidious' Number</p>
 			</div>
 
 			<div id="maul" class="col-md-3">
 				<p class="col-md-12">Darth Maul</p>
-				<img class="img-responsive" src="assets/images/maul.jpg" alt="" />
+				<img class="img-responsive aFighter" src="assets/images/maul.jpg" alt="maul"/>
 				<p class="col-md-12">Darth Maul's Number</p>
 			</div>
 
 			<div id="vader" class="col-md-3">
 				<p class="col-md-12">Darth Vader</p>
-				<img class="img-responsive" src="assets/images/vader.jpg" alt="" />
+				<img class="img-responsive aFighter" src="assets/images/vader.jpg" alt="vader" />
 				<p class="col-md-12">Darth Vader's Number</p>
 			</div>
 		</div>
 	</div>
 
-	<div class="row col-md-12">
-		<div id="fightArena" class="row col-md-12">Fight Arena!!</div>
-		
+<!-- This is where the two selected figthers duke it out -->
+	<div id="fightArena" class="row col-md-12">	
 		<div id="fighters" class="row col-md-12">
-			<div class="row col-md-12">
-				<div id="luke" class="col-md-6">
-					<p class="col-md-12">Luke Skywalker</p>
-					<img class="img-responsive" src="assets/images/luke.png" alt="" />
-					<p class="col-md-12">Luke Skywalker's Number</p>
-				</div>
-
-				<div id="sidious" class="col-md-6">
-					<p class="col-md-12">Darth Sidious</p>
-					<img class="img-responsive" src="assets/images/sidious.png" alt="" />
-					<p class="col-md-12">Darth Sidious' Number</p>
-				</div>
+			<div class="row col-md-12">The Fight Arena!!</div>
+			<div id="fightersRow" class="row col-md-12">
+					<!-- Fighters will be injected into this fighting row -->
 			</div>
+		</div>
 
-			<div class="row col-md-12 text-center">
+<!-- This row keeps the score -->
+		<div id="scoreBoard" class="row col-md-12 text-center">
+			<div class="row col-md-12">
 				<button id="attack" type="button" class="btn btn-info btn-lg">ATTACK!!</button>
+				<button id="restart" name="restart" class="btn btn-info btn-lg">New Game?</button>
 			</div>
 
 			<div class="row col-md-12">
-				<p class="col-md-6">
-					Your Attack Damage
+				<p class="col-md-6 Health0">
+					<!-- Player One Health -->
 				</p>
 
-				<p class="col-md-6">
-					Enemy's Attack Damage
+				<p class="col-md-6 Health1">
+					<!-- Enemies Health -->
 				</p>
-
 			</div>
-		</div>	
-	</div>	
+		</div>
+
+	</div>
 
 </div>
+
+<script src="assets/javascript/game.js"></script>
 </body>
 </html>
