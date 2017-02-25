@@ -153,7 +153,6 @@ $(document).ready(function(){
         //and the health updates below each player until one dies a horrible
         //and painful death
         $("#attack").on("click", function(e){
-        	console.log("ATTACK");
 
 	        if(someoneIsAlive){
 	        	var enemyDamage = theirDamage;
